@@ -1,0 +1,1 @@
+Learning computer science fundamentals with C.
