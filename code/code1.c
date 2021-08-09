@@ -4,22 +4,26 @@
 int
 main(int argc, char *argv[])
 {
-    int a, n = 0;    
+    int a, n = 0, b = 2;    
     printf("Put a integer number: ");
     scanf("%d", &a);
+    if (a == 42)
+    {
+        printf("You know Douglas Adams... %c", b);
+    }
     while (a != 42)
     {
         if (n < 5)    
-            {
+        {
             printf("Put another number: ");
             scanf("%d", &a);
             if (a == 42)
-            {
-                printf("You know Douglas Adams... :P");
+            {                
+                printf("You know Douglas Adams... %c", b);
             }
-            }
-        n = n + 1;
-        if (n >= 10)
+        }
+        n++;
+        if (n >= 5)
         {
             printf("You have no more tries, sorry.");
             break;
