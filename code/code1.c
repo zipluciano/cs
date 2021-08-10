@@ -5,7 +5,7 @@ int
 main(int argc, char *argv[])
 {
     int a, n = 0, b = 2;    
-    printf("Put a integer number: ");
+    printf("\nPut a integer number: ");
     scanf("%d", &a);
     if (a == 42)
     {
@@ -28,6 +28,6 @@ main(int argc, char *argv[])
             printf("You have no more tries, sorry.");
             break;
         }
-    }    
+    }
     return 0;
 }
